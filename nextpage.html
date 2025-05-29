@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Monthsary Message</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+ body {
+  margin: 0;
+  min-height: 100vh;
+  background: url('flower1.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe Script', cursive, sans-serif;
+  overflow: hidden;
+}
+    .fancy-holder {
+      background: rgba(255,255,255,0.7);
+      border-radius: 35px;
+      box-shadow: 0 8px 32px 0 rgba(231,84,128,0.15);
+      padding: 50px 60px;
+      max-width: 500px;
+      text-align: center;
+      position: relative;
+      border: 3px solid #e75480;
+      animation: fadeIn 1.2s;
+    }
+    .fancy-holder:before, .fancy-holder:after {
+      content: "💖";
+      font-size: 2.5em;
+      position: absolute;
+      top: -30px;
+      left: 30px;
+      opacity: 0.7;
+      animation: pulse 2s infinite alternate;
+    }
+    .fancy-holder:after {
+      content: "💕";
+      top: unset;
+      bottom: -30px;
+      right: 30px;
+      left: unset;
+      animation-delay: 1s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9);}
+      to { opacity: 1; transform: scale(1);}
+    }
+    @keyframes pulse {
+      from { transform: scale(1);}
+      to { transform: scale(1.2);}
+    }
+    .monthsary-message {
+      font-size: 1.5em;
+      color: #e75480;
+      margin-bottom: 1em;
+      font-family: 'Segoe Script', cursive, sans-serif;
+      text-shadow: 1px 1px 8px #fff0f5;
+      letter-spacing: 1px;
+    }
+    .back-btn {
+      display: inline-block;
+      margin-top: 2em;
+      padding: 0.7em 2em;
+      font-size: 1.1em;
+      color: #fff;
+      background: linear-gradient(90deg, #e75480 0%, #ffb6c1 100%);
+      border: none;
+      border-radius: 25px;
+      box-shadow: 0 4px 16px rgba(231,84,128,0.15);
+      text-decoration: none;
+      font-family: 'Segoe Script', cursive, sans-serif;
+      letter-spacing: 2px;
+      transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+    .back-btn:hover {
+      background: linear-gradient(90deg, #ffb6c1 0%, #e75480 100%);
+      transform: scale(1.05) translateY(-2px);
+      box-shadow: 0 8px 24px rgba(231,84,128,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="fancy-holder">
+    <div class="monthsary-message">
+      Happy 7th Monthsary, love ko!<br>
+      Thank you for filling my days with laughter, warmth, and endless happiness.<br>
+      Every moment with you is a treasure, and I can't wait for all the adventures ahead.<br>
+      Araw-araw mas lalo kitang mamahalin! 💗
+      <br> Thank you for all your time and efforts na binibigay mo po sakin. I trully appreciate it.<br>
+      <br> Mahal na mahal kita.
+      <br> Again, Happy Monthsary! 😘
+    </div>
+    <a href="Monthsary Proj.html" class="back-btn">&larr; Back</a>
+  </div>
+</body>
+</html>
