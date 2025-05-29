@@ -5,41 +5,42 @@
   <title>Our Monthsary Message</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
- body {
-  margin: 0;
-  min-height: 100vh;
-  background: url('flower1.jpg') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Segoe Script', cursive, sans-serif;
-  overflow: hidden;
-}
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: url('flower1.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe Script', cursive, sans-serif;
+      overflow: hidden;
+    }
     .fancy-holder {
       background: rgba(255,255,255,0.7);
-      border-radius: 35px;
-      box-shadow: 0 8px 32px 0 rgba(231,84,128,0.15);
-      padding: 50px 60px;
-      max-width: 500px;
+      border-radius: 2.2rem;
+      box-shadow: 0 0.5rem 2rem 0 rgba(231,84,128,0.15);
+      padding: 3rem 6vw;
+      max-width: 95vw;
+      width: 100%;
       text-align: center;
       position: relative;
-      border: 3px solid #e75480;
+      border: 0.19rem solid #e75480;
       animation: fadeIn 1.2s;
     }
     .fancy-holder:before, .fancy-holder:after {
       content: "💖";
-      font-size: 2.5em;
+      font-size: 2.2em;
       position: absolute;
-      top: -30px;
-      left: 30px;
+      top: -2rem;
+      left: 2rem;
       opacity: 0.7;
       animation: pulse 2s infinite alternate;
     }
     .fancy-holder:after {
       content: "💕";
       top: unset;
-      bottom: -30px;
-      right: 30px;
+      bottom: -2rem;
+      right: 2rem;
       left: unset;
       animation-delay: 1s;
     }
@@ -52,7 +53,7 @@
       to { transform: scale(1.2);}
     }
     .monthsary-message {
-      font-size: 1.5em;
+      font-size: 1.2rem;
       color: #e75480;
       margin-bottom: 1em;
       font-family: 'Segoe Script', cursive, sans-serif;
@@ -63,12 +64,12 @@
       display: inline-block;
       margin-top: 2em;
       padding: 0.7em 2em;
-      font-size: 1.1em;
+      font-size: 1.1rem;
       color: #fff;
       background: linear-gradient(90deg, #e75480 0%, #ffb6c1 100%);
       border: none;
-      border-radius: 25px;
-      box-shadow: 0 4px 16px rgba(231,84,128,0.15);
+      border-radius: 1.5rem;
+      box-shadow: 0 0.25rem 1rem rgba(231,84,128,0.15);
       text-decoration: none;
       font-family: 'Segoe Script', cursive, sans-serif;
       letter-spacing: 2px;
@@ -78,7 +79,34 @@
     .back-btn:hover {
       background: linear-gradient(90deg, #ffb6c1 0%, #e75480 100%);
       transform: scale(1.05) translateY(-2px);
-      box-shadow: 0 8px 24px rgba(231,84,128,0.2);
+      box-shadow: 0 0.5rem 1.5rem rgba(231,84,128,0.2);
+    }
+
+    /* Responsive styles */
+    @media (max-width: 600px) {
+      .fancy-holder {
+        padding: 1.2rem 3vw;
+        border-radius: 1.2rem;
+        max-width: 99vw;
+        border-width: 2px;
+      }
+      .fancy-holder:before, .fancy-holder:after {
+        font-size: 1.5em;
+        top: -1.2rem;
+        left: 1.2rem;
+      }
+      .fancy-holder:after {
+        bottom: -1.2rem;
+        right: 1.2rem;
+      }
+      .monthsary-message {
+        font-size: 1rem;
+      }
+      .back-btn {
+        font-size: 1rem;
+        padding: 0.7em 1.2em;
+        border-radius: 1rem;
+      }
     }
   </style>
 </head>
